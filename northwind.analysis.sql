@@ -121,7 +121,7 @@ WHERE
 
 -- -- Question 9.	Which orders have the highest freight cost?  
 SELECT 
-    Customer_ID, freight
+    CustomerID, freight
 FROM
     Orders
 ORDER BY freight DESC
@@ -130,16 +130,16 @@ LIMIT 5;
 
 -- -- Question 10. Which orders are most recent (latest first)? 
 SELECT 
-    Order_ID Customer_ID, Order_Date
+    OrderID CustomerID, OrderDate
 FROM
     Orders
-ORDER BY Order_Date DESC
+ORDER BY OrderDate DESC
 LIMIT 5;
 
 
 -- -- Question 11.	Which orders have low freight (< 20)? 
  SELECT 
-    Order_ID, Customer_ID, Freight
+    OrderID, CustomerID, Freight
 FROM
     Orders
 WHERE
