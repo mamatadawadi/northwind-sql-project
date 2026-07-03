@@ -44,10 +44,10 @@ ALTER TABLE Orders
 CHANGE COLUMN Order_Date OrderDate Time;
 
 ALTER TABLE employees
-CHANGE COLUMN employees_ID employeesID INT;
+CHANGE COLUMN employees_ID employeeID INT;
 
 ALTER TABLE Orders
 CHANGE COLUMN employee_ID employeesID INT;
 
 ALTER TABLE ORDERS
-CHANGE COLUMN emplyeesID employeeID INT;
+CHANGE COLUMN emplyoeesID employeeID INT;
