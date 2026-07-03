@@ -48,3 +48,6 @@ CHANGE COLUMN employees_ID employeesID INT;
 
 ALTER TABLE Orders
 CHANGE COLUMN employee_ID employeesID INT;
+
+ALTER TABLE ORDERS
+CHANGE COLUMN emplyeesID employeeID INT;
