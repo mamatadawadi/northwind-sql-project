@@ -9,6 +9,7 @@ This project contains SQL queries created using the Northwind database to practi
 - ORDER BY
 - LIMIT
 - LIKE
+- -INNER JOIN
 
 ## Project Categories
 
@@ -31,13 +32,20 @@ This project contains SQL queries created using the Northwind database to practi
 - Which orders are shipped to USA or Germany?
 - What are the top 5 orders by freight value?
 
+### INNER JOINS
+- Show every customer's company name and their order ID.
+- - Show customer company name, order date, and freight.
+- Show every employee's full name and the order IDs they handled.
+- Show product name with its category name.
+- Show product name, supplier company, and unit price.
+
 ## Tools Used
 - MySQL Workbench
 - Northwind Database
 - GitHub
 
 ## Key Learning Outcomes
-This project helped me develop a strong foundation in SQL by practicing data retrieval, filtering, sorting, and pattern matching. I am currently expanding my SQL skills by learning GROUP BY, aggregate functions, and JOIN operations.
+This project helped me develop a strong foundation in SQL by practicing data retrieval, filtering, sorting, altering and pattern matching. I am currently expanding my SQL skills by learning GROUP BY, aggregate functions, and JOIN operations.
 
 ## Author
 Mamata Dawadi
