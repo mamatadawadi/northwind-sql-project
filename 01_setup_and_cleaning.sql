@@ -1,7 +1,7 @@
 -- DATABASE SETUP -- 
 CREATE DATABASE Northwind; 
 
--- TABLES --
+-- CREATE TABLES orders --
 CREATE table orders (
 order_ID INT NOT NULL,
 Customer_ID Text NOT NULL,
@@ -13,6 +13,7 @@ shipper_ID int not null,
 freight decimal (10,2) not null,
 primary key(order_ID) );
 
+-- CREATE TABLE order_details
 CREATE TABLE order_details (
 order_ID INT NOT NULL,
 product_ID INT NOT NULL,
@@ -27,6 +28,9 @@ PRIMARY KEY(order_ID) );
 
 -- CHANGE COLUMN NAME
 DESCRIBE Orders;
+
+ALTER TABLE orders
+MODIFY COLUMN OrderDate DATE;
 
 ALTER TABLE Orders
 CHANGE COLUMN order_id OrderID INT;
