@@ -36,10 +36,7 @@ FROM
         INNER JOIN
     categories ON products.categoryID = categories.categoryID;
     
--- Q5- Show every order with: 
- -- Customer Name 
- -- Employee Name 
- -- Order Date 
+-- Q5- Show every order with:-  Customer Name, Employee Name, Order Date 
  SELECT 
     c.contactName,
     o.OrderDate,
@@ -51,7 +48,44 @@ FROM
         INNER JOIN
     employees AS e ON o.employeeID = e.employeeID
     ORDER BY contactName;
-    
+
+
+-- Q6 Show- Product Name, Quantity Ordered 
+SELECT 
+    products.productName, order_details.quantity
+FROM
+    products
+        INNER JOIN
+    order_details ON products.productID = order_details.productID
+ORDER BY quantity DESC;
+
+
+-- Q7 Show - Category Name, Product Name, Unit Price, Sort highest price first.
+SELECT 
+    categories.categoryName,
+    products.productName,
+    products.unitPrice
+FROM
+    categories
+        INNER JOIN
+    products ON categories.categoryID = products.categoryID
+ORDER BY unitPrice DESC;
+
+
+-- Q8 - Show Supplier and Total Products
+SELECT 
+    shippers.companyName AS Shipper,
+    COUNT(products.productID) AS total_products
+FROM
+    shippers
+        INNER JOIN
+    orders ON shippers.shipperID = orders.shipperID
+        INNER JOIN
+    order_details ON orders.orderID = order_details.orderID
+        INNER JOIN
+    products ON order_details.productID = products.productID
+GROUP BY shippers.companyName
+ORDER BY total_products DESC;
     
  
 
