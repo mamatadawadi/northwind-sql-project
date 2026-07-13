@@ -9,7 +9,8 @@ This project contains SQL queries created using the Northwind database to practi
 - ORDER BY
 - LIMIT
 - LIKE
-- -INNER JOIN
+- INNER JOIN
+- GROUP BY
 
 ## Project Categories
 
@@ -34,10 +35,19 @@ This project contains SQL queries created using the Northwind database to practi
 
 ### INNER JOINS
 - Show every customer's company name and their order ID.
-- - Show customer company name, order date, and freight.
+- Show customer company name, order date, and freight.
 - Show every employee's full name and the order IDs they handled.
 - Show product name with its category name.
 - Show product name, supplier company, and unit price.
+- Show every customer's company name with their OrderID.  
+- Show customer name and order date. 
+- Show customer name and freight. 
+- Show employee full name with order IDs. 
+- Show product name with category name. 
+- Show product name with supplier name. 
+- Show order ID and product names. 
+ Show category name with product price. 
+
 
 ## Tools Used
 - MySQL Workbench
