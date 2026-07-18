@@ -15,38 +15,59 @@ This project contains SQL queries created using the Northwind database to practi
 ## Project Categories
 
 ### Customer Analysis
-- Which countries have the most customers?
-- Which customers are from USA and UK?
-- Who are the top 5 customers by name (A–Z)?
-- Which customers have names starting with "A" or "B"?
+1. Which countries have the most customers?
+2. Which customers are from USA and UK?
+3 Who are the top 5 customers by name (A–Z)?
+4 Which customers have names starting with "A" or "B"?
 
 ### Product Analysis
-- Which products are the most expensive?
-- Which products are the cheapest?
-- Which products have a UnitPrice greater than 20?
-- Which products have names starting with "Ch" or "Ca"?
+5 Which products are the most expensive?
+6 Which products are the cheapest?
+7 Which products have a UnitPrice greater than 20?
+8 Which products have names starting with "Ch" or "Ca"?
 
 ### Order Analysis
-- Which orders have the highest freight cost?
-- Which orders are most recent?
-- Which orders have low freight (< 20)?
-- Which orders are shipped to USA or Germany?
-- What are the top 5 orders by freight value?
+9 Which orders have the highest freight cost?
+10 Which orders are most recent?
+11. Which orders have low freight (< 20)?
+12. Which orders are shipped to USA or Germany?
+13 What are the top 5 orders by freight value?
 
 ### INNER JOINS
-- Show every customer's company name and their order ID.
-- Show customer company name, order date, and freight.
-- Show every employee's full name and the order IDs they handled.
-- Show product name with its category name.
-- Show product name, supplier company, and unit price.
-- Show every customer's company name with their OrderID.  
-- Show customer name and order date. 
-- Show customer name and freight. 
-- Show employee full name with order IDs. 
-- Show product name with category name. 
-- Show product name with supplier name. 
-- Show order ID and product names. 
- Show category name with product price. 
+14. Show every customer's company name and their order ID.
+15. Show customer company name, order date, and freight.
+16. Show every employee's full name and the order IDs they handled.
+17. Show product name with its category name.
+18. Show product name, supplier company, and unit price.
+19. Show every customer's company name with their OrderID.  
+20. Show customer name and order date. 
+21. Show customer name and freight. 
+22. Show employee full name with order IDs. 
+23. Show product name with category name. 
+24. Show product name with supplier name. 
+25. Show order ID and product names. 
+26. Show category name with product price.
+
+### LEFT JOINS
+27.. Show all products even if never ordered.
+28.  List each shipper, the products shipped, and the customers who received them.
+29. Show all categories even if empty.
+30. Show all employees even if no orders.
+31. Show all products even if never ordered.
+32. List customers with total orders (including zero).
+33. Find customers with no orders.
+34. Find categories without products.
+35. Find products never ordered.
+36. Show customer names with latest order.
+37. Show categories and average price.
+38. Show products and quantities sold.
+
+### GROUP BY 
+39. Count customers by country.
+40. Count customers by city.
+41. Count products per category.
+42. Average product price by category.
+
 
 
 ## Tools Used
