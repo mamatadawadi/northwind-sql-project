@@ -61,12 +61,24 @@ This project contains SQL queries created using the Northwind database to practi
 36. Show customer names with latest order.
 37. Show categories and average price.
 38. Show products and quantities sold.
+39. Show categories and average price.
+40. Show products and quantities sold.
 
 ### GROUP BY 
-39. Count customers by country.
-40. Count customers by city.
-41. Count products per category.
-42. Average product price by category.
+41. Count customers by country.
+42. Count customers by city.
+43. Count products per category.
+44. Average product price by category.
+45. Total sales by customer.
+46. Average quantity ordered.
+47. Count discontinued products.
+48. Count orders by year.
+49. Average order value by customer.
+50. Highest freight by employee.
+51. Lowest freight by employee.
+52. Count orders by month.
+53. Total units sold per product.
+
 
 
 
