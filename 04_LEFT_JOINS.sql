@@ -96,5 +96,24 @@ FROM
     orders ON customers.customerID = orders.CustomerID
 GROUP BY customers.contactName;
 
+ -- Q11 Show categories and average price.
+SELECT 
+    categories.categoryName,
+    AVG(products.unitPrice) AS Avg_Price
+FROM
+    categories
+        LEFT JOIN
+    products ON categories.categoryID = products.categoryID
+GROUP BY categories.categoryName;
+
+ -- Q12 . Show products and quantities sold.
+SELECT 
+    products.productName,
+    COUNT(order_details.quantity) AS total_Quantities
+FROM
+    products
+        LEFT JOIN
+    order_details ON products.productID = order_details.productID
+GROUP BY products.productName;
  
   
