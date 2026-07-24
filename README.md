@@ -1,4 +1,4 @@
-# Northwind SQL Practice Project
+# Northwind SQL Project
 
 ## Overview
 This project contains SQL queries created using the Northwind database to practice fundamental SQL concepts and explore customer, product, and order data.
@@ -79,6 +79,17 @@ This project contains SQL queries created using the Northwind database to practi
 52. Count orders by month.
 53. Total units sold per product.
 
+### HAVIMG
+55. Countries with more than 5 customers.
+56. Categories with more than 10 products.
+57. Customers with more than 5 orders.
+58. Employees handling over 50 orders.
+59. Categories with average price greater than 30.
+60. Customers spending over 10,000.
+61. Countries with freight greater than 5,000.
+62. Employees with average freight greater than 70.
+63. Products sold over 500 units.
+64. Cities with more than 3 customers.
 
 
 
