@@ -91,6 +91,36 @@ This project contains SQL queries created using the Northwind database to practi
 63. Products sold over 500 units.
 64. Cities with more than 3 customers.
 
+### CASE Statements
+65.	Create a column that categorizes products: 
+    o	Price > 50 = Expensive 
+    o	Price 20–50 = Medium 
+    o	Price < 20 = Cheap 
+    
+66.	Display products as: 
+    o	Discontinued = "Unavailable" 
+    o	Otherwise = "Available"
+  	
+67.	Categorize customers: 
+    o	USA = Domestic Customer 
+    o	Other countries = International Customer 
+
+68.	Categorize orders: 
+    o	Freight > 100 = High Shipping Cost 
+    o	Freight <= 100 = Normal Shipping Cost 
+
+69.	Count the number of products in each price category. 
+
+70.	Create customer segments: 
+    o	More than 20 orders = VIP 
+    o	10–20 orders = Regular 
+    o	Less than 10 orders = New Customer 
+
+71.	Create a sales performance category: 
+    o	Sales > 10,000 = Excellent 
+    o	Sales 5,000–10,000 = Good 
+    o	Below 5,000 = Needs Improvement 
+
 
 
 ## Tools Used
