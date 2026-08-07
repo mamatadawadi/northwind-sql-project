@@ -122,3 +122,53 @@ FROM
     Orders
 ORDER BY Freight DESC
 LIMIT 5;
+
+-- -------------- --
+-- DISTICNT
+-- Q14 Show the different countries where customers are located.
+SELECT DISTINCT country, contactName 
+FROM customers;
+
+-- Q15 Find the number of unique countries where customers are located. 
+SELECT count(DISTINCT country) AS Number_ofCountries
+FROM customers;
+
+-- Q16 Display all unique combinations of customer country and city. 
+SELECT DISTINCT country, city
+FROM customers;
+
+-- Q17 Find how many different cities exist for each customer country. 
+SELECT count(distinct city) AS Number_of_city, Country
+FROM customers
+GROUP BY Country;
+
+-- Q18 Show the unique customer contact titles for customers from a specific country. 
+SELECT DISTINCT contactTitle, Country
+FROM customers
+WHERE Country = 'Germany';
+
+-- Q19 Find the top 5 countries with the highest number of unique customer cities.
+SELECT COUNT(DISTINCT city) AS Number_of_city, Country
+FROM customers
+GROUP BY Country
+ORDER BY Number_of_city DESC
+LIMIT 5; 
+
+-- Q20 Find the number of unique customers who have placed at least one order. 
+SELECT COUNT(DISTINCT customerID) AS Number_of_customer
+FROM customers;
+
+-- Q21 Find the number of unique products ordered by each customer. 
+SELECT orders.customerID, COUNT(DISTINCT order_details.productID) AS Number_of_product
+FROM orders
+INNER JOIN order_details
+ON orders.OrderID = order_details.OrderID
+GROUP BY customerID
+ORDER BY Number_of_product DESC;
+
+-- Q22 Show the unique employee IDs who have processed orders in the year 1997. 
+SELECT DISTINCT employees.employeeID, orders.orderdate
+FROM employees
+INNER JOIN orders
+ON employees.employeeID = orders.employeeID
+
