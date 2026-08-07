@@ -113,3 +113,23 @@ FROM
     customers
 GROUP BY City
 HAVING COUNT(contactName) > 3;
+
+-- Q11 Products with average quantity greater than 20.
+SELECT 
+    products.productName,
+    AVG(order_details.quantity) AS AVG_quantity
+FROM
+    products
+        INNER JOIN
+    order_details ON products.productID = order_details.productID
+GROUP BY products.productName
+HAVING AVG(order_details.quantity) > 20
+ORDER BY AVG_quantity DESC;
+
+-- Q12 Customers with fewer than 4 orders.
+SELECT customers.contactName, COUNT(orders.OrderID) AS total_orders
+FROM customers
+INNER JOIN orders
+ON customers.customerID = orders.CustomerID
+GROUP BY customers.contactName
+HAVING COUNT(orders.OrderID) < 4;
